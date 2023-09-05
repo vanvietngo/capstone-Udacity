@@ -141,10 +141,9 @@ jobs:
           command: docker system prune
 
 workflows:
-  version: 2
-  build-deploy:
+  deployment:
     jobs:
-    
+
       - aws-eks/create-cluster:
           cluster-name: my-eks-cluster
 
@@ -158,7 +157,7 @@ workflows:
           filters:
             branches:
               only:
-                - master
+                - main
           requires:
             - "lint"
 
@@ -168,6 +167,6 @@ workflows:
           filters:
             branches:
               only:
-                - master
+                - main
           requires:
             - "build"
