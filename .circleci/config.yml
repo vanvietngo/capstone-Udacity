@@ -144,12 +144,14 @@ workflows:
   version: 2
   build-deploy:
     jobs:
+    
       - aws-eks/create-cluster:
           cluster-name: my-eks-cluster
 
       - lint:
           requires:
             - "aws-eks/create-cluster"
+
       - build:
           cluster-name: my-eks-cluster
           aws-region: $AWS_DEFAULT_REGION
@@ -159,6 +161,7 @@ workflows:
                 - master
           requires:
             - "lint"
+
       - deploy:
           cluster-name: my-eks-cluster
           aws-region: $AWS_DEFAULT_REGION
