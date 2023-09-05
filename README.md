@@ -1,5 +1,5 @@
 ## Load Balancer Endpoint
-http://a7fc107d6227e435bbdcb554906f0fb6-1219523202.us-east-1.elb.amazonaws.com/
+a29cd5712ec074f19a1741762a481e62-826212601.us-east-1.elb.amazonaws.com
 
 ## Authors
 
@@ -9,7 +9,7 @@ http://a7fc107d6227e435bbdcb554906f0fb6-1219523202.us-east-1.elb.amazonaws.com/
 
 
 ### CircleCI Status
-[![<CircleCI>](https://circleci.com/gh/tuanpa2295/udacity-cloud-devops-capstone.svg?style=svg)](https://github.com/tuanpa2295/udacity-cloud-devops-capstone)
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/vanvietngo/capstone-Udacity/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/vanvietngo/capstone-Udacity/tree/main)
 
 
 
